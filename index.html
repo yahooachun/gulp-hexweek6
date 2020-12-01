@@ -76,14 +76,14 @@
   <div class="container">
     <div class="row  js-banner-text">
       <div class=" col-md-5 offset-md-7 mb-5">
-        <h2 data-aos="fade-up" class="text-white text-3xl text-sm-4xl">Perfume your day</h2>
-        <p data-aos="fade-up" class="text-white text-lg text-sm-xl">A perfume is like a piece of clothing, a message, a way of presenting
+        <h2 data-aos="animate__fadeInDown" class="text-white text-3xl text-sm-4xl">Perfume your day</h2>
+        <p data-aos="animate__fadeInDown" class="text-white text-lg text-sm-xl">A perfume is like a piece of clothing, a message, a way of presenting
           oneself a
           costume that
           according to the
           person who wears it.</p>
       </div>
-      <div data-aos="fade-up" class=" col-md-4 offset-md-7">
+      <div data-aos="animate__fadeInDown" class=" col-md-4 offset-md-7">
         <a href="shop.html"
           class="hover__bg--white text-white text-2xl text-center lh-2 font-weight-medium border border-white rounded-pill py-4 ">Shop
           now</a>
@@ -94,24 +94,24 @@
 <ul class="container mb-11 mb-md-13">
 
   <li class="row  no-gutters align-items-center flex-column-reverse flex-md-row mb-9 mb-md-0  ">
-    <div class=" col-md-4 offset-md-1  js-productFirst-text">
+    <div data-aos="animate__fadeInLeft" class=" col-md-4 offset-md-1  js-productFirst-text">
       <h3 class="text-3xl">Gabrielle CHANEL</h3>
       <p class="text-lg mb-3 mb-md-5">全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。
         極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
       <a href="product.html">查看更多</a>
     </div>
-    <div class=" col-md-6 offset-md-1 mb-3 mb-md-0 js-productFirst-img">
+    <div data-aos="animate__fadeIn" class=" col-md-6 offset-md-1 mb-3 mb-md-0 js-productFirst-img">
       <img class="img-fluid" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index2.jpg" alt="perfume">
     </div>
   </li>
   <li class="row no-gutters  align-items-center mb-9 mb-md-0 t">
-    <div class=" col-md-6 mb-3 mb-md-0 js-productSecond-img">
+    <div data-aos="animate__fadeIn" class=" col-md-6 mb-3 mb-md-0 js-productSecond-img">
       <img class="img-fluid"
         src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index3.png?raw=true"
         alt="perfume">
     </div>
     <div class=" col-md-4 offset-md-1 js-productSecond-text">
-      <div class="pl-0 pl-md-5">
+      <div data-aos="animate__fadeInRight" class="pl-0 pl-md-5">
         <h3 class="text-3xl">Five O’clock Au Gingembre</h3>
         <p class="text-lg mb-3 mb-md-5">
           生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
@@ -273,11 +273,53 @@
     </div>
   </footer>
 
+
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .item {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        padding-top: 75px;
+        background: #ccc;
+        text-align: center;
+        color: #FFF;
+        font-size: 3em;
+    }
+
+    [data-aos] {
+        visibility: hidden;
+    }
+
+    [data-aos].animate__animated {
+        visibility: visible;
+    }
+    /* This changes all the animations globaly */
+:root {
+  --animate-duration: 1800ms;
+  --animation-delay: 2.9s;
+}
+</style>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script> AOS.init();</script>
+  <script>
+    AOS.init({
+            useClassNames: true,
+            initClassName: false,
+            animatedClassName: 'animate__animated'
+            // animatedClassName: 'animated',
+        });
+  </script>
+
 
   <script src="./assets/js/all.js"></script>
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
