@@ -1,0 +1,123 @@
+/* navbar */
+
+
+$navbar-padding-x: 0;
+$navbar-nav-link-padding-x:  0;
+$navbar-brand-padding-y:0;
+
+/*grid*/
+$grid-breakpoints: (
+  xs:0,
+  mb:376px,
+  sm: 576px,
+  md: 769px,
+  lg: 992px,
+  xl: 1200px
+);
+$container-max-widths: (
+  mb:100%,
+  sm:100%,
+  md: 992px,
+  lg: 960px,
+  xl: 1140px
+);
+
+/*color*/
+$primary :#916019;
+$secondary:#AC8A46;
+$info:#818A91;
+$dark: #707070;
+$light:#E0E0E0;
+$text-muted:#848484;
+$theme-colors: (
+  'gray':#8d8d8d,
+  "black": #000,
+  'small':#a5a5a5,
+);
+$gray-500:#8D8D8D;
+$link-color: $secondary;
+$link-hover-color:$primary;
+
+
+/*  font-size */
+$font-size-base: 1rem;
+$font-size: () !default;
+$font-size: map-merge(
+  (
+    'xs': ($font-size-base * 0.75),
+    'sm': ($font-size-base * 0.875),
+    'base': $font-size-base,
+    'lg': ($font-size-base * 1.25),
+    'xl' :($font-size-base * 1.5),
+    '2xl': ($font-size-base * 1.75),
+    '3xl': ($font-size-base * 2),
+    '4xl':($font-size-base * 2.5),
+  ),
+  $font-size
+);
+
+/*font */
+$headings-margin-bottom:  0;
+$paragraph-margin-bottom:  0;
+
+/*border*/
+$border-width:2px;
+$btn-border-radius:0px;
+$btn-border-radius-lg:0px;
+/*spacer */
+$spacer: 1rem ;
+$spacers: (
+  0:0,
+  1:($spacer * 0.25),
+  2: ($spacer * .375),
+  3: ($spacer * 0.5),
+  4: ($spacer * .75),
+  5: $spacer,
+  6:($spacer * 1.25),
+  7: ($spacer * 1.5),
+  8: ($spacer * 1.75),
+  9: ($spacer * 2),
+  10: ($spacer * 2.25),
+  11: ($spacer * 2.5),
+  12: ($spacer * 3.25),
+  13: ($spacer * 3.75),
+  15: ($spacer * 5),
+  16: ($spacer * 6.625),
+);
+
+/* input */
+$input-placeholder-color: $gray-500;
+
+
+/* modal */
+$modal-sm:165px;
+$modal-content-border-width:0px;
+$modal-content-border-radius:4px;
+
+/*form */
+$input-color:   #818A91;
+$form-group-margin-bottom:20px;
+$label-margin-bottom:4px;
+$input-border-width:1px;
+$input-padding-y:($spacer * .5) ;
+$input-padding-x:($spacer * .75);
+$input-focus-box-shadow:none;
+$input-focus-bg:#edd3a3;
+$input-focus-box-shadow: inset 0px 0px 5px rgba($primary,0.3 );
+$input-plaintext-color: #818A91;
+$input-btn-padding-y-lg:     17px !default;
+$input-btn-padding-x-lg:    16px !default;
+$input-btn-font-size-lg:      $font-size-base !default;
+
+
+
+$custom-select-padding-y:$spacer;
+$custom-select-padding-x:$spacer;
+$custom-select-height:auto;
+$custom-select-border-color:$primary;
+$custom-select-border-radius:4px 0 0 4px;
+$custom-select-line-height:1;
+
+
+$btn-padding-y-lg:  16px;
+$btn-padding-x-lg:   24px
